@@ -10,15 +10,17 @@
 
   <body>
     <div class="container">
-
       <div>
-        <button class="btn btn-outline-info text-black mt-3 ms-2">Mis saldos</button>
-      <img
-        src="./img/persona.jpg"
-        class="rounded-circle float-end border border-5 border-primary mt-2"
-        alt=""
-        width="80px"
-      /></div>
+        <button class="btn btn-outline-info text-black mt-3 ms-2">
+          Mis saldos
+        </button>
+        <img
+          src="./img/persona.jpg"
+          class="rounded-circle float-end border border-5 border-primary mt-2"
+          alt=""
+          width="80px"
+        />
+      </div>
 
       <div class="row p-2">
         <div class="col position-relative">
@@ -26,20 +28,23 @@
           <h1 class="text-center pb-3">$9.999,99</h1>
         </div>
       </div>
-      <div class="row pb-3 mb-4">
-        <div class="col position-relative"></div>
+
+      <div class="row mb-">
+        <div class="col">
+          <h6 class="ps-3 d-inline">Transacciones recientes</h6>
+          <h6 class="float-end pe-3 d-inline text-decoration-underline">Ver más</h6>
+        </div>
       </div>
+
       <div class="row mb-5">
         <div class="col">
-          <span class="ps-3">Transacciones recientes</span>
-          <span class="float-end pe-3">Ver más</span>
           <div class="list-group">
             <button
               type="button"
               class="list-group-item list-group-item-action"
               aria-current="true"
             >
-              <img src="img/icons/arrow-up-right.svg" width="20">
+              <img src="img/icons/arrow-up-right.svg" width="20" />
               <span class="m-4">MOM</span>
               <span class="">16/05/2022</span>
               <span class="float-end">+9.999,99</span>
@@ -95,58 +100,61 @@
           </div>
         </div>
       </div>
-
-<!-- MENU NAV -->
-
-<div class="row row-cols-5 border-top fixed-bottom">
-  <div class="col">
-    <a
-      href="./index.html"
-      class="btn btn-white position-relative top-50 start-50 translate-middle"
-    >
-      <img src="./img/icons/house.svg" width="40" />
-      <p>Inicio</p>
-      <p></p
-    ></a>
-  </div>
-
-  <div class="col">
-    <a
-      href="./transferencias.html"
-      class="btn btn-white position-relative top-50 start-50 translate-middle"
-    >
-      <img src="./img/icons/arrow-down-up.svg" width="40" />
-      <p>Transferir</p>
-      <p></p
-    ></a>
-  </div>
-  <div class="col">
-    <a
-      href="./tarjetas.html"
-      class="btn btn-white position-relative top-50 start-50 translate-middle"
-    >
-      <img src="./img/icons/credit-card.svg" width="40" />
-      <p>Tarjetas</p>
-    </a>
-  </div>
-  <div class="col">
-    <a
-      href="./pagos.html"
-      class="btn btn-white position-relative top-50 start-50 translate-middle"
-    >
-      <img src="./img/icons/file-earmark-check.svg" width="40" />
-      <p>Pagos</p>
-    </a>
-  </div>
-  <div class="col">
-    <a
-      href="./otros.html"
-      class="btn btn-white position-relative top-50 start-50 translate-middle"
-    >
-      <img src="./img/icons/three-dots.svg" width="40" />
-      <p>Otros</p>
-    </a>
-  </div>
+    </div>
+    <!-- MENU INFERIOR -->
+    <div class="container">
+      <div class="row row-cols-5 border-top fixed-bottom">
+        <div class="col text-center">
+          <a
+            class="btn btn-white w-100 btn-sm"
+            href="./index.html"
+            role="button"
+          >
+            <img src="./img/icons/house.svg" width="40" />
+            <p class="mb-0">Inicio</p>
+          </a>
+        </div>
+        <div class="col text-center">
+          <a
+            class="btn btn-white w-100 btn-sm"
+            href="./transferencias.html"
+            role="button"
+          >
+            <img src="./img/icons/arrow-down-up.svg" width="40" />
+            <p class="mb-0">Transferir</p>
+          </a>
+        </div>
+        <div class="col text-center">
+          <a
+            class="btn btn-white w-100 btn-sm"
+            href="./tarjetas.html"
+            role="button"
+          >
+            <img src="./img/icons/credit-card.svg" width="40" />
+            <p class="mb-0">Tarjetas</p>
+          </a>
+        </div>
+        <div class="col text-center">
+          <a
+            class="btn btn-white w-100 btn-sm"
+            href="./pagos.html"
+            role="button"
+          >
+            <img src="./img/icons/file-earmark-check.svg" width="40" />
+            <p class="mb-0">Pagos</p>
+          </a>
+        </div>
+        <div class="col text-center">
+          <a
+            class="btn btn-white w-100 btn-sm"
+            href="./otros.html"
+            role="button"
+          >
+            <img src="./img/icons/three-dots.svg" width="40" />
+            <p class="mb-0">Otros</p>
+          </a>
+        </div>
       </div>
+    </div>
   </body>
 </html>
