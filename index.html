@@ -4,33 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ITBANK Online Banking</title>
-    <link rel="stylesheet" href="custom.css" />
+    <title>ITBANK Home Banking</title>
+    <link rel="stylesheet" href="SASS/custom.css" />
   </head>
 
   <body>
-    <div class="container">
-      <div>
-        <button class="btn btn-outline-info text-black mt-3 ms-2">
-          Mis saldos
-        </button>
+    <!-- ------------------------ -->
+    <div class="container-fluid contenedor-desktop">
+      <div class="menu-superior d-flex justify-content-center">
         <img
-          src="./img/persona.jpg"
-          class="rounded-circle float-end border border-5 border-primary mt-2"
-          alt=""
-          width="80px"
-          type="button"
+          class="m-4"
+          src="./img/logo-itbank-negro.png"
+          alt="logo itbank"
+          width="150px"
         />
+        <div class="cuenta">
+          <span class="text-decoration-underline float-end">Mi cuenta</span>
+
+          <img
+            src="./img/persona.jpg"
+            class="rounded-circle border border-4 border-primary"
+            alt=""
+            width="70px"
+            height="70px"
+            type="button"
+          />
+        </div>
+      </div>
+      <div class="row row-cols-4 columnas-desktop">
+        <div class="col">
+          <nav class="nav flex-column mt-5">
+            <a class="nav-link text-center text-black" href="#">Inicio</a>
+            <a class="nav-link text-center text-black" href="#">Tranferir</a>
+            <a class="nav-link text-center text-black" href="#">Tarjetas</a>
+            <a class="nav-link text-center text-black" href="#">Pagos</a>
+            <a class="nav-link text-center text-black" href="#">Otros</a>
+          </nav>
+        </div>
+        <div class="col">
+          <h1 class="text-center">Saldo</h1>
+          <h1 class="text-center pb-3">$9.999,99</h1>
+          <h6 class="">Transacciones recientes</h6>
+          <div class="container-transacciones">
+            <button type="button" class="btn border-warning w-100">
+              <img
+                class="float-start me-2"
+                src="img/icons/person-circle.svg"
+                width="20"
+              />
+              <span class="float-start me-2">MOM</span>
+              <span class="float-start">16/05/2022</span>
+              <span class="float-end">+9.999,99</span>
+            </button>
+          </div>
+          <button type="button" class="btn border-warning d-block">
+            <span class="d-block">Ver más</span>
+          </button>
+        </div>
+        <div class="col bg-warning">Análisis de gastos</div>
+        <div class="col bg-primary">Vencimientos</div>
+      </div>
+    </div>
+
+    <!-- -------------------------------MOBILE---------------------------------- -->
+
+    <div class="container-fluid contenedor-mobile">
+      <div class="row p-2">
+        <div class="col">
+          <button class="btn btn-outline-info text-black m-4">
+            Mis saldos
+          </button>
+          <img
+            src="./img/persona.jpg"
+            class="rounded-circle float-end border border-5 border-primary me-3"
+            alt=""
+            width="80px"
+            type="button"
+          />
+        </div>
       </div>
 
-      <div class="row p-2">
+      <div class="row">
         <div class="col position-relative">
           <h1 class="text-center">Caja de ahorro en Pesos</h1>
           <h1 class="text-center pb-3">$9.999,99</h1>
         </div>
       </div>
 
-      <div class="row mb-">
+      <div class="row mb-2">
         <div class="col">
           <h6 class="ps-3 d-inline">Transacciones recientes</h6>
           <h6
@@ -42,7 +103,7 @@
         </div>
       </div>
 
-      <div class="row mb-5">
+      <div class="row">
         <div class="col">
           <div class="list-group">
             <button
@@ -50,66 +111,18 @@
               class="list-group-item list-group-item-action"
               aria-current="true"
             >
-              <img src="img/icons/arrow-up-right.svg" width="20" />
+              <img src="img/icons/person-circle.svg" width="20" />
               <span class="m-4">MOM</span>
-              <span class="">16/05/2022</span>
               <span class="float-end">+9.999,99</span>
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              A button item
+              <span class="text-center">16/05/2022</span>
             </button>
           </div>
         </div>
       </div>
     </div>
     <!-- MENU INFERIOR -->
-    <div class="container">
-      <div class="row row-cols-5 border-top fixed-bottom">
+    <nav class="nav-inferior fixed-bottom contenedor-mobile">
+      <div class="row row-cols-5 border-top contenedor-mobile">
         <div class="col text-center">
           <a
             class="btn btn-white w-100 btn-sm"
@@ -161,6 +174,6 @@
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   </body>
 </html>
