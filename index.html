@@ -5,72 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITBANK Home Banking</title>
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./custom.css" />
   </head>
 
   <body>
-    <!-- ------------------------ -->
-    <div class="container-fluid contenedor-desktop">
-      <div class="menu-superior d-flex justify-content-center">
-        <img
-          class="m-4"
-          src="./img/logo-itbank-negro.png"
-          alt="logo itbank"
-          width="150px"
-        />
-        <div class="cuenta">
-          <span class="text-decoration-underline float-end">Mi cuenta</span>
-
-          <img
-            src="./img/persona.jpg"
-            class="rounded-circle border border-4 border-primary"
-            alt=""
-            width="70px"
-            height="70px"
-            type="button"
-          />
-        </div>
-      </div>
-      <div class="row row-cols-4 columnas-desktop">
-        <div class="col">
-          <nav class="nav flex-column mt-5">
-            <a class="nav-link text-center text-black" href="#">Inicio</a>
-            <a class="nav-link text-center text-black" href="#">Tranferir</a>
-            <a class="nav-link text-center text-black" href="#">Tarjetas</a>
-            <a class="nav-link text-center text-black" href="#">Pagos</a>
-            <a class="nav-link text-center text-black" href="#">Otros</a>
-          </nav>
-        </div>
-        <div class="col">
-          <h1 class="text-center">Saldo</h1>
-          <h1 class="text-center pb-3">$9.999,99</h1>
-          <h6 class="">Transacciones recientes</h6>
-          <div class="container-transacciones">
-            <button type="button" class="btn border-warning w-100">
-              <img
-                class="float-start me-2"
-                src="img/icons/person-circle.svg"
-                width="20"
-              />
-              <span class="float-start me-2">MOM</span>
-              <span class="float-start">16/05/2022</span>
-              <span class="float-end">+9.999,99</span>
-            </button>
+    <div class="contenedor-desktop">
+      <div class="container-fluid">
+        <div class="row row-cols-2 menu-superior ">
+          <div
+            class="col-3 d-flex align-items-center justify-content-center bg-light"
+          >
+            <img
+              class=""
+              src="./img/logo-itbank-negro.png"
+              alt="logo itbank"
+              width="150px"
+            />
           </div>
-          <button type="button" class="btn border-warning d-block">
-            <span class="d-block">Ver más</span>
-          </button>
+          <div class="col-9 d-flex justify-content-end align-items-center">
+            <span class="me-4">Saldo</span>
+            <span class="me-4">$9.999,99</span>
+            <span class="text-decoration-underline me-4">Perfil</span>
+            <img
+              src="./img/persona.jpg"
+              class="me-4 rounded-circle border border-4 border-primary"
+              alt=""
+              width="70px"
+              height="70px"
+              type="button"
+            />
+          </div>
         </div>
-        <div class="col bg-warning">Análisis de gastos</div>
-        <div class="col bg-primary">Vencimientos</div>
+
+        <div class="row row-cols-4 columnas-desktop">
+          <div class="col bg-light ">
+            <nav class="nav flex-column mt-5">
+              <a class="nav-link text-center text-black bg-warning mb-4" href="./index.html"
+                ><h4>Inicio</h4></a
+              >
+              <a
+                class="nav-link text-center text-black mb-4"
+                href="./transferencias.html"
+                ><h4>Tranferir</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="./tarjetas.html"
+                ><h4>Tarjeta</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="./pagos.html"
+                ><h4>Pagos</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="#"
+                ><h4>Otros</h4></a
+              >
+              <h4 class="text-center mt-5">Salir</h4>
+            </nav>
+          </div>
+          <div class="col mt-4">
+            <h4 class="text-center">Transferencias</h4>
+            <h6 class="text-center mb-4">Recientes</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/person-circle.svg"
+                  width="20"
+                />
+                <span class="float-start me-4">MOM</span>
+                <span class="float-start">16/05/2022</span>
+                <span class="float-end">+9.999,99</span>
+              </button>
+            </div>
+          </div>
+          <div class="col mt-4">
+            <h4 class="text-center">Gastado</h4>
+            <h6 class="text-center mb-4">$0</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/cash-coin.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">Otros</span>
+                <span class="float-end">$0</span>
+              </button>
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/cash-coin.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">Cajeros</span>
+                <span class="float-end">$0</span>
+              </button>
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/cash-coin.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">Restaurant</span>
+                <span class="float-end">$0</span>
+              </button>
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/cash-coin.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">Supermercados</span>
+                <span class="float-end">$0</span>
+              </button>
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/cash-coin.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">Etc.</span>
+                <span class="float-end">$0</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn d-block mt-2 float-end"
+              >
+                <span class="">Ver más</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col mt-4">
+            <h4 class="text-center">Servicios</h4>
+            <h6 class="text-center mb-4">A pagar</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/file-earmark-check.svg"
+                  width="20"
+                />
+                <span class="float-start me-4">Servicio X</span>
+                <span class="float-start">xx/xx/2022</span>
+                <span class="float-end">$2.500</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn d-block mt-2 float-end"
+              >
+                <span class="">Ver más</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
     <!-- -------------------------------MOBILE---------------------------------- -->
 
     <div class="container-fluid contenedor-mobile">
       <div class="row p-2">
-        <div class="col">
+        <div class="col ">
           <button class="btn btn-outline-info text-black m-4">
             Mis saldos
           </button>
@@ -150,7 +247,7 @@
             role="button"
           >
             <img src="./img/icons/credit-card.svg" width="40" />
-            <p class="mb-0">Tarjetas</p>
+            <p class="mb-0">Tarjeta</p>
           </a>
         </div>
         <div class="col text-center">

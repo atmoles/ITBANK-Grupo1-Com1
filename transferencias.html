@@ -5,173 +5,340 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./custom.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col bg-primary p-5 mt-4">Mis cuentas</div>
-      </div>
-      <div class="row row-cols-3">
-        <div class="col bg-secondary p-5 mt-4">
-          <button
-            type="button"
-            class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
+
+    <div class="contenedor-desktop">
+      <div class="container-fluid">
+        <div class="row row-cols-3 menu-superior">
+          <div
+            class="col-3 d-flex align-items-center justify-content-center bg-light"
           >
             <img
-              src="img/icons/qr-code-scan.svg"
-              width="70"
-              style="
-                filter: invert(80%) sepia(60%) saturate(2006%) hue-rotate(8deg)
-                  brightness(100%) contrast(100%);
-              "
+              class=""
+              src="./img/logo-itbank-negro.png"
+              alt="logo itbank"
+              width="150px"
             />
-            <span>Leer QR</span>
-          </button>
-        </div>
-        <div class="col bg-secondary mt-4">
-          <button
-            type="button"
-            class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
+          </div>
+          <div class="col-4 d-flex justify-content-center align-items-center">
+            <span class="text-decoration-underline me-5 bg-warning"
+            >NUEVA TRANSFERENCIA</span
           >
+          </div>
+          <div class="col-5 d-flex justify-content-end align-items-center">
+            <span class="me-4">Saldo</span>
+            <span class="me-4">$9.999,99</span>
+            <span class="text-decoration-underline me-4">Perfil</span>
             <img
-              src="img/icons/plus-square.svg"
-              width="70"
-              style="
-                filter: invert(80%) sepia(60%) saturate(2006%) hue-rotate(8deg)
-                  brightness(100%) contrast(100%);
-              "
+              src="./img/persona.jpg"
+              class="me-4 rounded-circle border border-4 border-primary"
+              alt=""
+              width="70px"
+              height="70px"
+              type="button"
             />
-
-            <span>Nueva</span>
-          </button>
+          </div>
         </div>
-        <div class="col bg-secondary mt-4">
-          <button
-            type="button"
-            class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
-          >
-            <img
-              src="img/icons/clock-history.svg"
-              width="70"
-              style="
-                filter: invert(80%) sepia(60%) saturate(2006%) hue-rotate(8deg)
-                  brightness(100%) contrast(100%);
-              "
-            />
 
-            <span>Historial</span>
-          </button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <p class="float-start m-3">Contactos</p>
-          <p class="float-end m-3">
-            <img src="img/icons/search.svg" width="15" />
+        <div class="row row-cols-4 columnas-desktop">
+          <div class="col bg-light">
+            <nav class="nav flex-column mt-5">
+              <a class="nav-link text-center text-black mb-4" href="./index.html"
+                ><h4 class="">Inicio</h4></a
+              >
+              <a
+                class="nav-link text-center text-black bg-warning mb-4"
+                href="./transferencias.html"
+                ><h4>Tranferir</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="./tarjetas.html"
+                ><h4>Tarjeta</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="./pagos.html"
+                ><h4>Pagos</h4></a
+              >
+              <a class="nav-link text-center text-black mb-4" href="#"
+                ><h4>Otros</h4></a
+              >
+              <h4 class="text-center mt-5">Salir</h4>
+            </nav>
+          </div>
+          <div class="col mt-4">
+            <h4 class="text-center">Historial</h4>
+            <h6 class="text-center mb-4">Transferencias</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/person-circle.svg"
+                  width="20"
+                />
+                <span class="float-start me-4">MOM</span>
+                <span class="float-start">16/05/2022</span>
+                <span class="float-end">+9.999,99</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="btn d-block mt-2 float-end"
+              >
+                <span class="">Ver más</span>
+              </button>
+            </div>
+          </div>
+          <div class="col mt-4">
+            <h4 class="text-center">Contactos</h4>
+            <h6 class="text-center mb-4">1</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/person-circle.svg"
+                  width="20"
+                />
+                <span class="float-start me-2">MOM</span>
+                <span class="float-end"></span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button
+                type="button"
+                class="btn d-block mt-2 float-start"
+              >
+                <span class="">Agregar</span>
+              </button>
+              <button
+                type="button"
+                class="btn d-block mt-2 float-end"
+              >
+                <span class="">Ver más</span>
+              </button>
+            </div>
+          </div>
 
-            Buscar
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="list-group">
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-              aria-current="true"
-            >
-              <img src="img/icons/person-circle.svg" width="25" class="me-4" />
-              Contact 1
-            </button>
-
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              <img src="img/icons/person-circle.svg" width="25" class="me-4" />
-              Contact 2
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              <img src="img/icons/person-circle.svg" width="25" class="me-4" />
-              Contact 3
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              <img src="img/icons/person-circle.svg" width="25" class="me-4" />
-              Contact 4
-            </button>
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-            >
-              <img src="img/icons/person-circle.svg" width="25" class="me-4" />
-              Contact 5
-            </button>
+          <div class="col mt-4">
+            <h4 class="text-center">Mis cuentas</h4>
+            <h6 class="text-center mb-4">1</h6>
+            <div class="container-transacciones">
+              <button type="button" class="btn w-100">
+                <img
+                  class="float-start me-2"
+                  src="img/icons/search.svg"
+                  width="20"
+                />
+                <span class="float-start me-4">Mercado Pago</span>
+              </button>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button
+                type="button"
+                class="btn d-block mt-2 float-start"
+              >
+                <span class="">Agregar</span>
+              </button>
+              <button
+                type="button"
+                class="btn d-block mt-2 float-end"
+              >
+                <span class="">Ver más</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MENU NAV -->
+    <!-- -------------------------------MOBILE-------------------------------- -->
 
-    <div class="container">
-      <div class="row row-cols-5 border-top fixed-bottom">
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./index.html"
-            role="button"
-          >
-            <img src="./img/icons/house.svg" width="40" />
-            <p class="mb-0">Inicio</p>
-          </a>
+    <div class="contenedor-mobile">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col bg-primary p-5 mt-4">Mis cuentas</div>
         </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./transferencias.html"
-            role="button"
-          >
-            <img src="./img/icons/arrow-down-up.svg" width="40" />
-            <p class="mb-0">Transferir</p>
-          </a>
+        <div class="row row-cols-3">
+          <div class="col bg-secondary p-5 mt-4">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
+            >
+              <img
+                src="img/icons/qr-code-scan.svg"
+                width="70"
+                style="
+                  filter: invert(80%) sepia(60%) saturate(2006%)
+                    hue-rotate(8deg) brightness(100%) contrast(100%);
+                "
+              />
+              <span>Leer QR</span>
+            </button>
+          </div>
+          <div class="col bg-secondary mt-4">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
+            >
+              <img
+                src="img/icons/plus-square.svg"
+                width="70"
+                style="
+                  filter: invert(80%) sepia(60%) saturate(2006%)
+                    hue-rotate(8deg) brightness(100%) contrast(100%);
+                "
+              />
+
+              <span>Nueva</span>
+            </button>
+          </div>
+          <div class="col bg-secondary mt-4">
+            <button
+              type="button"
+              class="btn btn-lg btn-outline-info position-relative top-50 start-50 translate-middle"
+            >
+              <img
+                src="img/icons/clock-history.svg"
+                width="70"
+                style="
+                  filter: invert(80%) sepia(60%) saturate(2006%)
+                    hue-rotate(8deg) brightness(100%) contrast(100%);
+                "
+              />
+
+              <span>Historial</span>
+            </button>
+          </div>
         </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./tarjetas.html"
-            role="button"
-          >
-            <img src="./img/icons/credit-card.svg" width="40" />
-            <p class="mb-0">Tarjetas</p>
-          </a>
+        <div class="row">
+          <div class="col">
+            <p class="float-start m-3">Contactos</p>
+            <p class="float-end m-3">
+              <img src="img/icons/search.svg" width="15" />
+
+              Buscar
+            </p>
+          </div>
         </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./pagos.html"
-            role="button"
-          >
-            <img src="./img/icons/file-earmark-check.svg" width="40" />
-            <p class="mb-0">Pagos</p>
-          </a>
+        <div class="row">
+          <div class="col">
+            <div class="list-group">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+                aria-current="true"
+              >
+                <img
+                  src="img/icons/person-circle.svg"
+                  width="25"
+                  class="me-4"
+                />
+                Contact 1
+              </button>
+
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                <img
+                  src="img/icons/person-circle.svg"
+                  width="25"
+                  class="me-4"
+                />
+                Contact 2
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                <img
+                  src="img/icons/person-circle.svg"
+                  width="25"
+                  class="me-4"
+                />
+                Contact 3
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                <img
+                  src="img/icons/person-circle.svg"
+                  width="25"
+                  class="me-4"
+                />
+                Contact 4
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                <img
+                  src="img/icons/person-circle.svg"
+                  width="25"
+                  class="me-4"
+                />
+                Contact 5
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./otros.html"
-            role="button"
-          >
-            <img src="./img/icons/three-dots.svg" width="40" />
-            <p class="mb-0">Otros</p>
-          </a>
+      </div>
+
+      <!-- MENU NAV -->
+
+      <div class="container">
+        <div class="row row-cols-5 border-top fixed-bottom">
+          <div class="col text-center">
+            <a
+              class="btn btn-white w-100 btn-sm"
+              href="./index.html"
+              role="button"
+            >
+              <img src="./img/icons/house.svg" width="40" />
+              <p class="mb-0">Inicio</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a
+              class="btn btn-white w-100 btn-sm"
+              href="./transferencias.html"
+              role="button"
+            >
+              <img src="./img/icons/arrow-down-up.svg" width="40" />
+              <p class="mb-0">Transferir</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a
+              class="btn btn-white w-100 btn-sm"
+              href="./tarjetas.html"
+              role="button"
+            >
+              <img src="./img/icons/credit-card.svg" width="40" />
+              <p class="mb-0">Tarjeta</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a
+              class="btn btn-white w-100 btn-sm"
+              href="./pagos.html"
+              role="button"
+            >
+              <img src="./img/icons/file-earmark-check.svg" width="40" />
+              <p class="mb-0">Pagos</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a
+              class="btn btn-white w-100 btn-sm"
+              href="./otros.html"
+              role="button"
+            >
+              <img src="./img/icons/three-dots.svg" width="40" />
+              <p class="mb-0">Otros</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
