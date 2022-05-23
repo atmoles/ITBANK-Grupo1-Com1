@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #1b252f;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 2% 4%;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.logo p {
+  font-weight: 600;
+}
+.logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-options p {
+  color: #255a4e;
+  font-weight: 600;
+}
+.space {
+  height: 10px;
+  width: 80px;
+}
+.space2 {
+  height: 10px;
+  width: 40px;
+}
+.space3 {
+  height: 50px;
+  width: 40px;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.button2 {
+  padding: 12px 26px;
+  background-color: #08c373;
+  border-radius: 15px;
+}
+.button2 p {
+  color: #000;
+  font-weight: 600;
+}
+
+.content {
+  padding: 2% 8%;
+}
+.title {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+.box1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box2 {
+  width: 70%;
+}
+.app {
+  padding: 4% 4%;
+  display: flex;
+  flex-direction: row;
+}
+.app-button {
+  background-color: #151d27;
+  border-radius: 5px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+}
+.app img {
+  width: 45px;
+  height: 45px;
+  padding-right: 10px;
+}
+.app-text1 {
+  color: #08c373;
+  font-size: 14px;
+}
+.app-text2 {
+  color: #08c373;
+  font-size: 20px;
+}
