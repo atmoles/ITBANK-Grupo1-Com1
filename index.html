@@ -4,272 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ITBANK Home Banking</title>
+    <title>ITBANK Home</title>
     <link rel="stylesheet" href="./custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
-    <div class="contenedor-desktop">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <div class="row row-cols-2 menu-superior ">
-          <div
-            class="col-3 d-flex align-items-center justify-content-center bg-light"
-          >
-            <img
-              class=""
-              src="./img/logo-itbank-negro.png"
-              alt="logo itbank"
-              width="150px"
-            />
-          </div>
-          <div class="col-9 d-flex justify-content-end align-items-center">
-            <span class="me-4">Saldo</span>
-            <span class="me-4">$9.999,99</span>
-            <span class="text-decoration-underline me-4">Perfil</span>
-            <img
-              src="./img/persona.jpg"
-              class="me-4 rounded-circle border border-4 border-primary"
-              alt=""
-              width="70px"
-              height="70px"
-              type="button"
-            />
-          </div>
-        </div>
-
-        <div class="row row-cols-4 columnas-desktop">
-          <div class="col bg-light ">
-            <nav class="nav flex-column mt-5">
-              <a class="nav-link text-center text-black bg-warning mb-4" href="./index.html"
-                ><h4>Inicio</h4></a
-              >
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo-itbank-negro.png" alt="" width="200" height=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Solitá tu tarjeta</a>
+            </li>
+            <li class="nav-item dropdown">
               <a
-                class="nav-link text-center text-black mb-4"
-                href="./transferencias.html"
-                ><h4>Tranferir</h4></a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-              <a class="nav-link text-center text-black mb-4" href="./tarjetas.html"
-                ><h4>Tarjeta</h4></a
-              >
-              <a class="nav-link text-center text-black mb-4" href="./pagos.html"
-                ><h4>Pagos</h4></a
-              >
-              <a class="nav-link text-center text-black mb-4" href="#"
-                ><h4>Otros</h4></a
-              >
-              <a class="nav-link text-center text-black mt-5" href="./home.html"
-                ><h4>Salir</h4></a
-              >
-            </nav>
-          </div>
-          <div class="col mt-4">
-            <h4 class="text-center">Transferencias</h4>
-            <h6 class="text-center mb-4">Recientes</h6>
-            <div class="container-transacciones">
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/person-circle.svg"
-                  width="20"
-                />
-                <span class="float-start me-4">MOM</span>
-                <span class="float-start">16/05/2022</span>
-                <span class="float-end">+9.999,99</span>
-              </button>
-            </div>
-          </div>
-          <div class="col mt-4">
-            <h4 class="text-center">Gastado</h4>
-            <h6 class="text-center mb-4">$0</h6>
-            <div class="container-transacciones">
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/cash-coin.svg"
-                  width="20"
-                />
-                <span class="float-start me-2">Otros</span>
-                <span class="float-end">$0</span>
-              </button>
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/cash-coin.svg"
-                  width="20"
-                />
-                <span class="float-start me-2">Cajeros</span>
-                <span class="float-end">$0</span>
-              </button>
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/cash-coin.svg"
-                  width="20"
-                />
-                <span class="float-start me-2">Restaurant</span>
-                <span class="float-end">$0</span>
-              </button>
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/cash-coin.svg"
-                  width="20"
-                />
-                <span class="float-start me-2">Supermercados</span>
-                <span class="float-end">$0</span>
-              </button>
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/cash-coin.svg"
-                  width="20"
-                />
-                <span class="float-start me-2">Etc.</span>
-                <span class="float-end">$0</span>
-              </button>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button
-                type="button"
-                class="btn d-block mt-2 float-end"
-              >
-                <span class="">Ver más</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="col mt-4">
-            <h4 class="text-center">Servicios</h4>
-            <h6 class="text-center mb-4">A pagar</h6>
-            <div class="container-transacciones">
-              <button type="button" class="btn w-100">
-                <img
-                  class="float-start me-2"
-                  src="img/icons/file-earmark-check.svg"
-                  width="20"
-                />
-                <span class="float-start me-4">Servicio X</span>
-                <span class="float-start">xx/xx/2022</span>
-                <span class="float-end">$2.500</span>
-              </button>
-            </div>
-            <div class="d-flex justify-content-center">
-              <button
-                type="button"
-                class="btn d-block mt-2 float-end"
-              >
-                <span class="">Ver más</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -------------------------------MOBILE---------------------------------- -->
-
-    <div class="container-fluid contenedor-mobile">
-      <div class="row p-2">
-        <div class="col ">
-          <img
-            src="./img/persona.jpg"
-            class="rounded-circle float-end border border-5 border-primary me-3"
-            alt=""
-            width="80px"
-            type="button"
-          />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col position-relative">
-          <h1 class="text-center">Saldo</h1>
-          <h1 class="text-center pb-3">$9.999,99</h1>
-        </div>
-      </div>
-
-      <div class="row mb-2">
-        <div class="col">
-          <h6 class="ps-3 d-inline">Transacciones recientes</h6>
-          <h6
-            class="float-end pe-3 d-inline text-decoration-underline"
-            type="button"
-          >
-            Ver más
-          </h6>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <div class="list-group">
-            <button
-              type="button"
-              class="list-group-item list-group-item-action"
-              aria-current="true"
-            >
-              <img src="img/icons/person-circle.svg" width="20" />
-              <span class="m-4">MOM</span>
-              <span class="float-end">+9.999,99</span>
-              <span class="text-center">16/05/2022</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MENU INFERIOR -->
-    <nav class="nav-inferior fixed-bottom contenedor-mobile">
-      <div class="row row-cols-5 border-top contenedor-mobile">
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./index.html"
-            role="button"
-          >
-            <img src="./img/icons/house.svg" width="40" />
-            <p class="mb-0">Inicio</p>
-          </a>
-        </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./transferencias.html"
-            role="button"
-          >
-            <img src="./img/icons/arrow-down-up.svg" width="40" />
-            <p class="mb-0">Transferir</p>
-          </a>
-        </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./tarjetas.html"
-            role="button"
-          >
-            <img src="./img/icons/credit-card.svg" width="40" />
-            <p class="mb-0">Tarjeta</p>
-          </a>
-        </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./pagos.html"
-            role="button"
-          >
-            <img src="./img/icons/file-earmark-check.svg" width="40" />
-            <p class="mb-0">Pagos</p>
-          </a>
-        </div>
-        <div class="col text-center">
-          <a
-            class="btn btn-white w-100 btn-sm"
-            href="./otros.html"
-            role="button"
-          >
-            <img src="./img/icons/three-dots.svg" width="40" />
-            <p class="mb-0">Otros</p>
-          </a>
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Cobrá tu sueldo en ITBANK</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+    <main>
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">ITBANK Online Banking</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Realizá tus operaciones de forma fácil y rápida.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-outline-primary" href="./login.html" role="button">Online Banking</a>
+            <a class="btn btn-outline-primary" href="#" role="button">Hacete cliente</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container fixed-bottom">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-muted">&copy; 2022 ITBANK</p>
+
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-muted">About</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
